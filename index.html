@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <form action="">
+            <h1>Kalorien rechner</h1>
+            <label for="Körpergröße">Körpergröße</label>
+            <input type="text" id="height">
+            <label for="Alter">Alter</label>
+            <input type="text" id="age">
+            <label for="Gewicht">Gewicht</label>
+            <input type="text" id="weight">
+            <label for="Körperbau"></label>
+            <div>
+                <div>
+                    <input name="radio" type="radio" id="checkRadio" checked>
+                    <label for="Männich">Männich</label>
+                </div>
+                <div>
+                    <input name="radio" type="radio">
+                    <label for="Weiblich">Weiblich</label>
+                </div>
+
+            </div>
+            <label for="Aktivität">Arbeits- und Freizeitaktivität</label>
+            <select name="activList" id="activList">
+                <option value="0">Schlafen</option>
+                <option value="1" selected>Nur Sitzen oder Liegen</option>
+                <option value="2">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der
+                    Freizeit, z.B. Büroarbeit</option>
+                <option value="3">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende,
+                    Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="4">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker,
+                    Mechaniker, Hausfrauen</option>
+                <option value="5">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+            <input type="button" value="Submit" onclick="rechnen()">
+            <div>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>kcal</th>
+                        <th>kJ</th>
+                    </tr>
+                    <tr>
+                        <td>Grundumsatz</td>
+                        <td id="grundKcal">0</td>
+                        <td id="grundKj">0</td>
+                    </tr>
+                    <tr>
+                        <td>Gesamtumsatz</td>
+                        <td id="totalKcal">0</td>
+                        <td id="totalKj">0</td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
